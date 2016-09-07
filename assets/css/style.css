@@ -450,3 +450,38 @@ box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0
 
 /*CUSTOM*/ 
 /*ENDCUSTOM*/
+
+header.desktop .page-title {
+	text-align: center;
+	position: absolute;
+	margin-top: -300px;
+	left: 0px;
+	right: 0px;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+}
+
+header.desktop .page-title span{
+	font-size: 1.6em;
+}
+
+header.mobile .page-title {
+	text-align: center;
+	position: absolute;
+	margin-top: -100px;
+	left: 0px;
+	right: 0px;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+}
+
+header.mobile .page-title span{
+	font-size: 1.6em;
+}
+
+@media only screen and (max-width : 1200px) {
+	header.desktop .page-title {
+		margin-top: -200px;
+	}
+}
