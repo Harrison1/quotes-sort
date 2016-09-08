@@ -18,13 +18,17 @@ $('#select-all').click(function(event) {
         // Iterate each checkbox
         $(':checkbox').each(function() {
             this.checked = true;
-            $(this).parent('label').attr('class', $(this).is(':checked') ? 'select-box-on' : 'select-box-off');
+            $(this).parent('label').addClass('select-box-on');
         });
     }
 });
 
-$(".box").change(function() {
-    $(this).parent('label').attr('class', $(this).is(':checked') ? 'select-box-on' : 'select-box-off');
+$('.box').change(function() {
+    if($(this).is(":checked")) {
+        $(this).parent('label').addClass('select-box-on');
+    } else {
+        $(this).parent('label').removeClass('select-box-on');
+    }
 });
 
 createItems();
